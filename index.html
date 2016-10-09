@@ -16,20 +16,34 @@
 
 </head>
 <body>
-
+<div class="loader"></div>
 <section id="hero" class="container-fluid">
+
     <ul id="scene" class="fill"
     data-friction-x="0.1"
     data-friction-y="0.1"
-    data-scalar-x="10"
+    data-scalar-x="20"
     data-scalar-y="10"
     >   
       <li class="layer expand-width" data-depth="0.20" ><div class="bg"><video autoplay id="bgvid" loop>
         <source src="vid/bg-video.mp4" type="video/mp4">
         </video></div>
       </li>
-      <li class="layer expand-width" data-depth="0.40"></li>
-      <li class="layer expand-width" data-depth="0.60"></li>
+      <li class="layer expand-width" data-depth="0.40">
+        <div>
+          <img src="img/2.png" class="sphere 1">
+        </div>
+      </li>
+      <li class="layer expand-width" data-depth="0.50">
+        <div>
+          <!-- <img src="img/1.png" class="sphere 2"> -->
+        </div>
+      </li>
+      <li class="layer expand-width" data-depth="0.70">
+        <div>
+          <img src="img/3.png" class="sphere 4">
+        </div>
+      </li>
       <li class="layer expand-width" data-depth="0.80">
         <div id="particles-js"></div>
       </li>    
@@ -46,6 +60,15 @@
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
   <script src="js/lib/stats.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      window.setTimeout("fadeMyDiv();", 2000); 
+      })
+    function fadeMyDiv() {
+      $(".loader").fadeOut('slow');
+      }
+  </script>
 
   <script>
 

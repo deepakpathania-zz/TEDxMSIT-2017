@@ -4,6 +4,18 @@ body {
   background: #111;
   color: #666;
   margin: 0;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 img {
@@ -65,6 +77,7 @@ input[type=checkbox]:checked + label:before {
     overflow: hidden;
     display: block;
     width: 100%;
+    background: white;
   }
   .bg {
     position: relative;
@@ -77,6 +90,7 @@ input[type=checkbox]:checked + label:before {
     margin-top: -3%;
     margin-left: -5%;
 }
+
 .hero-content {
     display: block;
     margin: 0 auto;
@@ -84,6 +98,7 @@ input[type=checkbox]:checked + label:before {
     margin-top: calc(50vh - 80px);
     opacity: 1;
     top:0%;
+
 }
 .sub-title {
     color: white;
@@ -97,12 +112,34 @@ input[type=checkbox]:checked + label:before {
   padding: 5%;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../comment.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
 .scene {
   padding: 0;
   margin: 0;
 }
 
-
+@keyframes bobble {
+    0% {
+        transform: translate3d(800px, 100px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(800px, 150px, 0px);
+        animation-timing-function: ease-out;8
+    }
+    100% {
+        transform: translate3d(800px, 100px, 0px);
+    }
+}
 .expand-width {
   width: 100%;
 }
@@ -114,40 +151,99 @@ input[type=checkbox]:checked + label:before {
 .aspect {
   opacity: 0.9;
 }
-
-.layer:nth-child(1) {
-  opacity: 0.7;
+.sphere {
+  border-radius: 50% !important;
+  max-width: 20%;
 }
-.layer:nth-child(1) button {
+.layer:nth-child(1) {
+  opacity: 0.8;
+}
+.layer:nth-child(1) div img {
   -webkit-transform: rotate(150deg);
 }
 
 .layer:nth-child(2) {
-  opacity: 0.30;
+  opacity: 0.50;
+  
 }
-.layer:nth-child(2) button {
-  -webkit-transform: rotate(120deg);
+.layer:nth-child(2) div img {
+  transform: translate(800px, 100px);
+
+  width: 13%;
+  /*left: 600px;
+  position: absolute;
+  top: 300px;
+  -webkit-animation: myOrbit 7s linear infinite; /* Chrome, Safari 5 */
+       /*-moz-animation: myOrbit 7s linear infinite; /* Firefox 5-15 
+         -o-animation: myOrbit 7s linear infinite; /* Opera 12+ 
+            animation: myOrbit 7s linear infinite;  Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+  
+
+
+}
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(350px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(350px) rotate(-360deg); }
 }
 
-.layer:nth-child(3) {
-  opacity: 0.45;
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(350px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(350px) rotate(-360deg); }
 }
-.layer:nth-child(3) button {
-  -webkit-transform: rotate(90deg);
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(350px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(350px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+}
+.layer:nth-child(3) {
+  opacity: 0.5;
+}
+.layer:nth-child(3) div img {
+  transform: translate(950px, 500px);
+  width:11%;
+
 }
 
 .layer:nth-child(4) {
-  opacity: 0.60;
+  opacity: 0.4;
+  width: 85%;
 }
-.layer:nth-child(4) button {
-  -webkit-transform: rotate(60deg);
+.layer:nth-child(4) div img {
+  transform: translate(250px, 350px);
+  width:11%;
+}
+@-webkit-keyframes myOrbita {
+    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
+    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
 }
 
-.layer:nth-child(5) {
-  opacity: 1;
+@-moz-keyframes myOrbita {
+    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
+    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
 }
-.layer:nth-child(5) button {
-  -webkit-transform: rotate(30deg);
+
+@-o-keyframes myOrbita {
+    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
+    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
+}
+
+@keyframes myOrbita {
+    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
+    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
+}
+.layer:nth-child(5) {
+  opacity: 0.7;
+}
+.layer:nth-child(5) div img {
+  transform: translate(100px, 200px);
+  width:7%;
+  
 }
 
 .layer:nth-child(6) {
