@@ -112,6 +112,9 @@ input[type=checkbox]:checked + label:before {
     left:4%;
     position: absolute;
 }
+.first {
+    margin-left: 0px;
+}
 }
 .topbar {
     margin: 0 !important;
