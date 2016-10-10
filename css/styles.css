@@ -124,12 +124,27 @@ input[type=checkbox]:checked + label:before {
 @media (min-width: 700px)  {
 #action {
     bottom: 60px;
+    
 }
 }
 @media (min-width: 400px) {
 #action {
     bottom: 20px;
   }
+}
+@media (max-device-width: 700px) {
+  #action {
+    background-size: 80px 60px !important;
+    left: 5%;
+  }
+  .layer:nth-child(6) div img {
+    display: block;
+    max-width: 93%;
+    max-height: 80%;
+    left:4%;
+    position: absolute;
+}
+
 }
 #action {
     min-width:100%;
@@ -291,7 +306,6 @@ input[type=checkbox]:checked + label:before {
 .layer:nth-child(5) div img {
   transform: translate(100px, 200px);
   width:7%;
-  
 }
 
 .layer:nth-child(6) {
