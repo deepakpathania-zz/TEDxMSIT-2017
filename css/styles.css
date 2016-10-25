@@ -211,6 +211,19 @@ input[type=checkbox]:checked + label:before {
   padding: 0;
   margin: 0;
 }
+.thumbnail {
+  border: 0;
+}
+.thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 35%;
+}
+@media (min-width: 992px){
+.col-md-offset-1 {
+    margin-left: 4.333333%;
+}
+}
 
 @keyframes bobble {
     0% {
@@ -224,6 +237,22 @@ input[type=checkbox]:checked + label:before {
     100% {
         transform: translate3d(800px, 100px, 0px);
     }
+}
+.card {
+    padding: 10px;
+    box-shadow: 2px 1px 3px 3px rgba(136, 136, 136, 0.43);
+    background: rgba(128, 128, 128, 0);
+    color: #000;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.card:hover{
+  -webkit-transform: scale(1.02);
+   -moz-transform: scale(1.02);
+   -ms-transform: scale(1.02);
+   -o-transform: scale(1.02);
+   transform: scale(1.02);
+   box-shadow: 2px 2px 2px 3px gray;
 }
 .expand-width {
   width: 100%;
