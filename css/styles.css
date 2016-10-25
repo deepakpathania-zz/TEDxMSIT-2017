@@ -14,8 +14,9 @@ input[type=checkbox] {
   display: none;
 }
 
-
-
+.navbar {
+  border-radius: 0px;
+}
 input[type=checkbox] + label:before {
   display: inline-block;
   position: relative;
@@ -41,7 +42,7 @@ input[type=checkbox]:checked + label:before {
 }
 .shadow-arch-edges {
   position: relative;
-  box-shadow: 0 12px 10px -12px hsla(0, 0%, 0%, 1);
+  box-shadow: 0px 18px 11px -12px rgba(90, 88, 88, 0.83);
 }
 
 .shadow-arch-edges:before, .shadow-arch-edges:after {
@@ -344,6 +345,7 @@ input[type=checkbox]:checked + label:before {
 }
 #intro {
     background-color: white !important;
+    position: absolute;
 }
 @keyframes theme {
     0% {
