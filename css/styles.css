@@ -165,6 +165,9 @@ input[type=checkbox]:checked + label:before {
 .card {
   margin-left: 10px;
 }
+.intro-content {
+  margin-left: 10px;
+}
 }
 .topbar {
     margin: 0 !important;
