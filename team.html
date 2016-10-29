@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Tedx MSIT</title>
+
+  <!-- Behavioral Meta Data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Styles -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+
+</head>
+<body>
+  <div class="loader"></div>
+  <nav class="navbar navbar-inverse nav-style navbar-static navbar-fixed-top shadow-arch-edges" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="first">
+                    <a class="navbar-brand" href="#">Home</a>
+                  </li>
+                    <li>
+                        <a href="#">Speakers</a>
+                    </li>
+                    <li>
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+  </nav>
+      <section id="team">
+
+        <div class="container wrapper">
+            <br />
+            <h2>Team</h2>
+             <hr>
+             <div class="row">
+                <div class="col-sm-5 col-xs-12">
+                    <a href="http://deepakpathania.github.io"><img src="img/member1.png" class="members">
+                    </a>
+                   <h3 class="service-tag text-center">Deepak Pathania</h3>
+                   <p class="text-center">Full stack web developer. The UI/UX guy.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12"></div>
+                <div class="col-sm-5 col-xs-12">
+                     <a href="https://github.com/chawlaaditya8"><img src="img/member2.png" class="members">
+                     </a>
+                   <h3 class="service-tag text-center">Aditya Chawla</h3>
+                   <p class="text-center">Full stack web developer. The Bot guy.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+                <div class="row">
+                <div class="col-sm-5 col-xs-12">
+                    <a href="https://github.com/himanshu-tiwari"><img src="img/member4.png" class="members">
+                    </a>
+                   <h3 class="service-tag text-center">Himanshu Tiwari</h3>
+                   <p class="text-center">LAMP stack web developer. The Back end guy.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12"></div>
+                <div class="col-sm-5 col-xs-12">
+                    <a href="https://github.com/anurag145">
+                     <img src="img/member3.png" class="members">
+                    </a>
+                   <h3 class="service-tag text-center">Anurag Shrivastava</h3>
+                   <p class="text-center">Android developer. The Integration guy.</p>
+                </div>
+            </div>
+           
+        </div>
+
+
+    </section>
+  <script src="js/app.js"></script>
+  <script src="js/lib/stats.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      window.setTimeout("fadeMyDiv();", 4000); 
+      })
+    function fadeMyDiv() {
+      $(".loader").fadeOut('slow');
+      }
+
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
