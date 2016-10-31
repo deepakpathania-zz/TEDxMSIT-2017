@@ -1,10 +1,12 @@
 body {
   font-family: monospace;
   font-size: 18px;
-  background: #111;
+  /*background: #111;*/
   color: #666;
 }
-
+footer {
+  bottom: 0;
+}
 img {
   display: block;
   width: 100%;
@@ -13,12 +15,22 @@ img {
 input[type=checkbox] {
   display: none;
 }
-
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: inherit;
+}
+.shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.34),0 4px 10px 0 rgba(0, 0, 0, 0.22)!important;
+}
 .navbar {
   border-radius: 0px;
 }
 .footer-links li {
     display: inline;
+}
+.navbar-inverse {
+    background-color: #292c2f;
+    border-color: rgba(238, 238, 238, 0.1);
 }
 input[type=checkbox] + label:before {
   display: inline-block;
@@ -409,3 +421,4 @@ input[type=checkbox]:checked + label:before {
         background: #ffffff;
     }
 }
+
