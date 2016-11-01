@@ -55,6 +55,19 @@ body{
 	font-weight: bold;
 	font-size: 65px;
 }
+.sponsor-call {
+  text-align: center;
+}
+.quote {
+    background-color: #292c2f !important;
+    margin:0 auto;
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 60px;
+    border: 1px solid white;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
 .col-sm-offset-1 {
     margin-left: 4.33333333%;
