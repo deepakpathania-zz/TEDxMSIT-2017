@@ -4,6 +4,24 @@ body {
 .shadow {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.34),0 4px 10px 0 rgba(0, 0, 0, 0.22)!important;
 }
+.card {
+    font: normal 75px 'Cookie', cursive;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.43);
+    background: rgba(128, 128, 128, 0);
+    color: #000;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.card:hover{
+  -webkit-transform: scale(1.02);
+   -moz-transform: scale(1.02);
+   -ms-transform: scale(1.02);
+   -o-transform: scale(1.02);
+   transform: scale(1.02);
+   box-shadow: 2px 2px 2px 3px gray;
+}
+
 .navbar {
   border-radius: 0px;
 }

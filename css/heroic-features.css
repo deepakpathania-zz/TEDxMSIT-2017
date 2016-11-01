@@ -36,25 +36,8 @@
     z-index: 9999;
     background: url('../comment.gif') 50% 50% no-repeat rgb(249,249,249);
 }
-.social {
-	padding-right: 10px;
-}
-.card {
-	font: normal 75px 'Cookie', cursive;
-    padding: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.43);
-    background: rgba(128, 128, 128, 0);
-    color: #000;
-    margin-top: 20px;
-    overflow: hidden;
-}
-.card:hover{
-  -webkit-transform: scale(1.02);
-   -moz-transform: scale(1.02);
-   -ms-transform: scale(1.02);
-   -o-transform: scale(1.02);
-   transform: scale(1.02);
-   box-shadow: 2px 2px 2px 3px gray;
+.social1 {
+  padding-right: 10px;
 }
 .thumbnail {
   border: 0 !important;
