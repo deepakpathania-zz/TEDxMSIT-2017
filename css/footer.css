@@ -167,6 +167,12 @@
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+	.venue {
+		margin-left: -45px;
+	}
+	.phone {
+		margin-left: -30px;
+	}
 
 }
 

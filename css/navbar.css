@@ -46,4 +46,8 @@
 	.first {
 		margin-left: 0;
 	}
+  .card {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
 }
