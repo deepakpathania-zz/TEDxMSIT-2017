@@ -1,0 +1,44 @@
+/* ------------------
+ styling for the tables 
+   ------------------   */
+
+
+body
+{
+	line-height: 1.6em;
+}
+.center {
+	text-align: center;
+	color: #669;
+}
+
+#hor-zebra
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	position: absolute;
+	left: 10%;
+	top:20%;
+	width: 80%;
+	text-align: left;
+	border:2px solid #039;
+}
+#hor-zebra th
+{
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 8px;
+	color: #039;
+
+}
+#hor-zebra td
+{
+	padding: 8px;
+	color: #669;
+
+}
+#hor-zebra .odd
+{
+	background: #e8edff; 
+}
+
