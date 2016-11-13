@@ -18,7 +18,7 @@ body
 	font-size: 14px;
 	position: absolute;
 	left: 1%;
-	top:10%;
+	top:15%;
 	width: 98%;
 	text-align: left;
 	border:2px solid #039;
@@ -31,12 +31,17 @@ body
 	color: #039;
 
 }
+#hor-zebra tr {
+	border-bottom: 1px solid #039;
+} 
 #hor-zebra td
 {
 	padding: 8px;
 	color: #669;
+	
 
 }
+#hor-zebra tr:last-child { border-bottom: none;}
 #hor-zebra .odd
 {
 	background: #e8edff; 
