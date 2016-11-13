@@ -30,17 +30,22 @@ if($_POST['submit']){
 	.center {
 		text-align: center;
 	}
+	.register {
+		margin: 0 auto;
+		font-size: 30px;
+		border-radius: 0;
+
+	}
 	textarea {
 		resize:none;
 	}
 	</style>
 </head>
-<body>
+<body class="container">
 	<div class="center">
-		<h1><b>Register</b></h1>
+		<h1><b>Register</b></h1><hr>
 	</div>
-	<form class="container" method="post" action="register.php">
-		<hr>
+	<form class="well" method="post" action="register.php">
 		<div class="form-group">
 			<label for="exampleInputName1">Name</label>
 			<input type="text" name ="username" class="form-control" placeholder="Enter your name">
@@ -81,7 +86,10 @@ if($_POST['submit']){
 			<textarea class="form-control" id="exampleTextarea5" rows="3" name ="ans5" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
 		</div>
 		<br/>
-		<input name="submit" type="submit" class="btn btn-primary" value ="Register">
+		<div class="center">
+    		<input name="submit" type="submit" class="btn btn-primary register" value ="Register">
+    		<br/><br/>
+    	</div>
 	</form>
 </body>
 </html>
