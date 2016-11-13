@@ -5,7 +5,12 @@ if($_POST['submit']){
 	$username = strip_tags($_POST['username']);
 	$email = strip_tags($_POST['email']);
 	$contact = strip_tags($_POST['contact']);
-	$query = "INSERT INTO response(username,email,contact) VALUES('$username', '$email','$contact')";
+	$ans1 = strip_tags($_POST['ans1']);
+	$ans2 = strip_tags($_POST['ans2']);
+	$ans3 = strip_tags($_POST['ans3']);
+	$ans4 = strip_tags($_POST['ans4']);
+	$ans5 = strip_tags($_POST['ans5']);
+	$query = "INSERT INTO response(username,email,contact,ans1,ans2,ans3,ans4,ans5) VALUES('$username', '$email' , '$contact' , '$ans1', '$ans2', '$ans3', '$ans4', '$ans5')";
 	$result = mysqli_query($db,$query);
 	if($result) {
 		echo "Succesfully registered";
@@ -36,6 +41,15 @@ if($_POST['submit']){
 		border-radius: 0;
 
 	}
+	.register:hover {
+		box-shadow: 0px 6px 6px 0px gray;
+		background-color: #f5f5f5;
+		color: #337ab7;
+		border: 1px dashed #f5f5f5 ;
+	}
+	.form1{
+		box-shadow: 0px 6px 6px 0px gray;
+	}
 	textarea {
 		resize:none;
 	}
@@ -45,7 +59,7 @@ if($_POST['submit']){
 	<div class="center">
 		<h1><b>Register</b></h1><hr>
 	</div>
-	<form class="well" method="post" action="register.php">
+	<form class="well form1" method="post" action="register.php">
 		<div class="form-group">
 			<label for="exampleInputName1">Name</label>
 			<input type="text" name ="username" class="form-control" placeholder="Enter your name">
