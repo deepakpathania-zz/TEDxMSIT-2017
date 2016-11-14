@@ -15,6 +15,7 @@
 
     <!-- Styles -->
     <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet"> 
@@ -102,7 +103,7 @@
     </nav>
     <div class="container-fluid">
       <!-- Jumbotron Header -->
-      <header class="jumbotron hero-spacer intro-content">
+      <header class="jumbotron hero-spacer intro-content wow zoomIn">
         <h1>TEDx MSIT</h1>
         <p>TEDxMSIT with its vision to promote community development by providing a life-changing experience, is proud to announce its much anticipated debut TEDx event. We are all geared up for its grand premier which will be graced by the august presence of an esteemed panel of speakers from diverse fields.<br/>
           The event will witness numerous coruscating kaleidoscopes of ideas coming together to celebrate an amalgamation of some of the most brilliant minds we have in India along with their innovations and explorations in the form of incomparable array of short talks and world-class performances.</p>
@@ -117,7 +118,7 @@
               <h1>Event details</h1><hr>
             </div>
           </div>
-          <div class="col-sm-3 hero-feature card col-md-offset-1 col-sm-offset-1">
+          <div class="col-sm-3 hero-feature card col-md-offset-1 col-sm-offset-1 wow slideInLeft">
             <div class="thumbnail">
               <img src="img/location.png" alt="">
               <div class="caption">
@@ -130,7 +131,7 @@
             </div>
           </div>
           <div class="col-sm-1"></div>
-          <div class="col-sm-3 hero-feature card">
+          <div class="col-sm-3 hero-feature card wow slideInUp">
             <div class="thumbnail">
               <img src="img/mic.png" alt="">
               <div class="caption">
@@ -143,7 +144,7 @@
            </div>
          </div>
          <div class="col-sm-1"></div>
-         <div class="col-sm-3 hero-feature card">
+         <div class="col-sm-3 hero-feature card wow slideInRight">
           <div class="thumbnail">
             <img src="img/clock.png" alt="">
             <div class="caption">
@@ -166,7 +167,7 @@
     </div> -->
     </div>
     <br/><br/>
-    <footer class="footer-distributed" id="contact">
+    <footer class="footer-distributed wow fadeInUp" id="contact">
       <div class="footer-left">
         <h1 class="logo"><span>Tedx</span>MSIT</h1>
       </div>
@@ -211,6 +212,7 @@
   <script src="deploy/parallax.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
   <script src="js/lib/stats.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -240,21 +242,37 @@
   });
   </script>
   <script type="text/javascript">
-  var url = window.location;
-      // Will only work if string in href matches with location
-      $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+    var url = window.location;
+        // Will only work if string in href matches with location
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
 
-      // Will also work for relative and absolute hrefs
-      $('ul.nav a').filter(function() {
-        return this.href == url;
-      }).parent().addClass('active');
-      </script>
+        // Will also work for relative and absolute hrefs
+        $('ul.nav a').filter(function() {
+          return this.href == url;
+        }).parent().addClass('active');
+        </script>
 
-      <script>
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
-
-      </script>
+        <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+  </script>
+  <script type="text/javascript">
+    var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();
+  </script>
 
     </body>
     </html>
