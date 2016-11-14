@@ -168,7 +168,7 @@ input[type=checkbox]:checked + label:before {
   margin-left: 0;
 }
 .l5 {
-  top:215px !important;
+  top:170px !important;
   height: 35%;
 }
   #action {
@@ -311,7 +311,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .layer:nth-child(2) {
-  opacity: 0.6;
+  opacity: 0.4;
   
 }
 .layer:nth-child(2) div img {
@@ -359,7 +359,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .layer:nth-child(4) {
-  opacity: 0.6;
+  opacity: 0.2;
   width: 85%;
 }
 .layer:nth-child(4) div img {
