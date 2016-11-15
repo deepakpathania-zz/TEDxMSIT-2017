@@ -16,6 +16,7 @@
   <!-- Styles -->
   
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link href="css/animate.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -67,7 +68,7 @@
       <div class="page-header text-center">
         <h1 class="team-title">Speakers</h1>
       </div>
-  <div class ="row card">
+  <div class ="row card" id="card1">
     <div class="container">
       <div class="col-sm-4 col-xs-12">
         <img src="img/speaker.png" class="achieve-img left">
@@ -80,7 +81,7 @@
     </div>
   </div>
   <br/>
-  <div class ="row card">
+  <div class ="row card" id="card2">
     <div class="container">
       <div class="col-sm-8 col-xs-12">
         <h3 class="achieve-content"><b>Name of the speaker</b>
@@ -93,7 +94,7 @@
     </div>
   </div>
   <br/>
-    <div class ="row card">
+    <div class ="row card wow slideInRight">
     <div class="container">
       <div class="col-sm-4 col-xs-12">
         <img src="img/speaker.png" class="achieve-img left">
@@ -106,7 +107,7 @@
     </div>
   </div>
   <br/>
-  <div class ="row card">
+  <div class ="row card wow slideInLeft">
     <div class="container">
       <div class="col-sm-8 col-xs-12">
         <h3 class="achieve-content"><b>Name of the speaker</b>
@@ -119,7 +120,7 @@
     </div>
   </div>
   <br/>
-    <div class ="row card">
+    <div class ="row card wow slideInRight">
     <div class="container">
       <div class="col-sm-4 col-xs-12">
         <img src="img/speaker.png" class="achieve-img left">
@@ -132,7 +133,7 @@
     </div>
   </div>
   <br/>
-  <div class ="row card">
+  <div class ="row card wow slideInLeft">
     <div class="container">
       <div class="col-sm-8 col-xs-12">
         <h3 class="achieve-content"><b>Name of the speaker</b>
@@ -187,6 +188,7 @@
     </footer>
 
   <script src="js/lib/stats.js"></script>
+   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript">
@@ -195,6 +197,8 @@
       })
     function fadeMyDiv() {
       $(".loader").fadeOut('slow');
+      $('#card1').addClass('animated slideInLeft');
+      $('#card2').addClass('animated slideInRight');
       }
 
   </script>
@@ -223,6 +227,31 @@
     $('ul.nav a').filter(function() {
         return this.href == url;
     }).parent().addClass('active');
+  </script>
+  <script type="text/javascript">
+    var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();
+    $.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+  });
   </script>
 
 </body>
