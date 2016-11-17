@@ -97,7 +97,7 @@ input[type=checkbox]:checked + label:before {
     overflow: hidden;
     display: block;
     width: 100%;
-    background: white;
+    background: #eee;
     /*animation: theme 10s linear infinite;*/
   }
   .bg {
@@ -304,7 +304,7 @@ input[type=checkbox]:checked + label:before {
   max-width: 20%;
 }
 .layer:nth-child(1) {
-  opacity: 0.25;
+  opacity: 0.20;
 }
 .layer:nth-child(1) div img {
   -webkit-transform: rotate(150deg);
@@ -386,7 +386,7 @@ input[type=checkbox]:checked + label:before {
     to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
 }
 .layer:nth-child(5) {
-  opacity: 0.4;
+  opacity: 0.50;
 }
 .layer:nth-child(5) div img {
   transform: translate(100px, 200px);
