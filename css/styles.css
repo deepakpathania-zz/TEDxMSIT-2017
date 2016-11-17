@@ -98,9 +98,8 @@ input[type=checkbox]:checked + label:before {
     display: block;
     width: 100%;
     background: #eee;
-    /*animation: theme 10s linear infinite;*/
-  }
-  .bg {
+}
+.bg {
     position: relative;
     width: 100% !important;
     height: 100vh;
@@ -171,11 +170,11 @@ input[type=checkbox]:checked + label:before {
   top:170px !important;
   height: 35%;
 }
-  #action {
+#action {
     background-size: 80px 60px !important;
     left: 5%;
-  }
-  .layer:nth-child(6) div img {
+}
+.layer:nth-child(6) div img {
     display: block;
     max-width: 93%;
     max-height: 80%;
@@ -258,19 +257,6 @@ input[type=checkbox]:checked + label:before {
     margin-left: 4.33333333%;
 }
 }
-@keyframes bobble {
-    0% {
-        transform: translate3d(800px, 100px, 0px);
-        animation-timing-function: ease-in;
-    }
-    50% {
-        transform: translate3d(800px, 150px, 0px);
-        animation-timing-function: ease-out;8
-    }
-    100% {
-        transform: translate3d(800px, 100px, 0px);
-    }
-}
 .card {
     padding: 10px;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.43);
@@ -287,7 +273,6 @@ input[type=checkbox]:checked + label:before {
    transform: scale(1.02);
    box-shadow: 2px 2px 2px 3px gray;
 }
-
 .expand-width {
   width: 100%;
 }
@@ -309,45 +294,12 @@ input[type=checkbox]:checked + label:before {
 .layer:nth-child(1) div img {
   -webkit-transform: rotate(150deg);
 }
-
 .layer:nth-child(2) {
   opacity: 0.2;
-  
 }
 .layer:nth-child(2) div img {
   transform: translate(800px, 100px);
-
   width: 13%;
-  /*left: 600px;
-  position: absolute;
-  top: 300px;
-  -webkit-animation: myOrbit 7s linear infinite; /* Chrome, Safari 5 */
-       /*-moz-animation: myOrbit 7s linear infinite; /* Firefox 5-15 
-         -o-animation: myOrbit 7s linear infinite; /* Opera 12+ 
-            animation: myOrbit 7s linear infinite;  Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */
-  
-
-
-}
-@-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(350px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(350px) rotate(-360deg); }
-}
-
-@-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(350px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(350px) rotate(-360deg); }
-}
-
-@-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(350px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(350px) rotate(-360deg); }
-}
-
-@keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(350px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
 }
 .layer:nth-child(3) {
   opacity: 0.2;
@@ -355,9 +307,7 @@ input[type=checkbox]:checked + label:before {
 .layer:nth-child(3) div img {
   transform: translate(950px, 500px);
   width:11%;
-
 }
-
 .layer:nth-child(4) {
   opacity: 0.1;
   width: 85%;
@@ -366,25 +316,6 @@ input[type=checkbox]:checked + label:before {
   transform: translate(250px, 350px);
   width:11%;
 }
-@-webkit-keyframes myOrbita {
-    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
-    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
-}
-
-@-moz-keyframes myOrbita {
-    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
-    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
-}
-
-@-o-keyframes myOrbita {
-    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
-    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
-}
-
-@keyframes myOrbita {
-    from { -webkit-transform: rotate(360deg) translateX(400px) rotate(-360deg); }
-    to   { -webkit-transform: rotate(0deg) translateX(400px) rotate(0deg); }
-}
 .layer:nth-child(5) {
   opacity: 0.50;
 }
@@ -392,13 +323,11 @@ input[type=checkbox]:checked + label:before {
   transform: translate(100px, 200px);
   width:7%;
 }
-
 .layer:nth-child(6) {
   opacity: 1;
 }
 .layer:nth-child(6) button {
 }
-
 .center {
   text-align: center;
 }
@@ -409,16 +338,5 @@ input[type=checkbox]:checked + label:before {
 #intro {
     background-color: white !important;
     position: absolute;
-}
-@keyframes theme {
-    0% {
-        background: #ffffff;
-    }
-    50% {
-      background: #333;
-    }
-    100% {
-        background: #ffffff;
-    }
 }
 
