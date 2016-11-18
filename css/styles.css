@@ -97,7 +97,7 @@ input[type=checkbox]:checked + label:before {
     overflow: hidden;
     display: block;
     width: 100%;
-    background: #eee0;
+    background: #f8f8f8;
 }
 .bg {
     position: relative;
