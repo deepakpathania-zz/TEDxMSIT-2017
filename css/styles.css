@@ -97,7 +97,7 @@ input[type=checkbox]:checked + label:before {
     overflow: hidden;
     display: block;
     width: 100%;
-    background: #eee;
+    background: #eee0;
 }
 .bg {
     position: relative;
@@ -153,43 +153,46 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 700px) {
+
   #hero {
     background: white;
   }
   .layer:nth-child(1) {
-  opacity: 0.3 !important;
-}
+    opacity: 0.3 !important;
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+  }
   .layer:nth-child(5) {
-  opacity: 1 !important;
-
-}
-.first {
-  margin-left: 0;
-}
-.l5 {
-  top:170px !important;
-  height: 35%;
-}
-#action {
+    opacity: 1 !important;
+  }
+  .first {
+    margin-left: 0;
+  }
+  .l5 {
+    top:170px !important;
+    height: 35%;
+  }
+  #action {
     background-size: 80px 60px !important;
     left: 5%;
-}
-.layer:nth-child(6) div img {
+  }
+  .layer:nth-child(6) div img {
     display: block;
     max-width: 93%;
     max-height: 80%;
     left:4%;
     position: absolute;
-}
-.first {
+  }
+  .first {
     margin-left: 0px;
-}
-.card {
-  margin-left: 5px;
-}
-.intro-content {
-  margin-left: 5px;
-}
+  }
+  .card {
+    margin-left: 5px;
+  }
+  .intro-content {
+    margin-left: 5px;
+  }
 }
 .topbar {
     margin: 0 !important;
