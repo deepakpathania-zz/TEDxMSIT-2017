@@ -25,26 +25,24 @@ if($_POST['submit']) {
 	<title>Admin Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/form-elements.css">
-        <link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <div class="top-content" >
-        	
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
+        
+            <div class="inner-bg outer">
+                <div class="container middle">
+                    <div class="row inner center">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
-                        		<div class="form-top-left">
-                        			<h3>TEDx MSIT Admin login</h3>
+                        		<div class="form-top-left center white">
+                        			<h1 class="big">Admin login</h1>
                         		</div>
                         		<div class="form-top-right">
                         			<i class="fa fa-key"></i>
                         		</div>
                             </div>
-                            <div class="form-bottom">
+                            <div class="form-bottom panel panel-default pad dshadow">
 			                    <form role="form" action="admin.php" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
@@ -54,14 +52,13 @@ if($_POST['submit']) {
 			                        	<label class="sr-only" for="form-password">Password</label>
 			                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
 			                        </div>
-			                        <input type="submit" name="submit" class="btn form-btn" value="Sign in!">
+			                        <input type="submit" name="submit" class="btn btn-primary" value="Sign in!">
 			                    </form>
 		                    </div>
                         </div>
                     </div>
                 </div>
             </div>       
-        </div>
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.backstretch.min.js"></script>
