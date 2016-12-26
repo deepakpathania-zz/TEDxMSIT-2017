@@ -36,7 +36,9 @@ input[type="checkbox"]{
 	display: inline;
 	width: auto;
 }
-
+hr{
+	border-top: 2px dashed #eee !important;
+}
 .muted{
 	color: #aaa;
 }
