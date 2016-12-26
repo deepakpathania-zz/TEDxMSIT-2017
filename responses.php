@@ -41,9 +41,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Responses</title>
+	<title>TEDxMSIT | Responses</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 </head>
 <body>
 <form action="logout.php" style="position:absolute;left:93.5%;top:5%">
